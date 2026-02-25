@@ -1,0 +1,20 @@
+$error: #ff0000;
+$warning: rgb(239, 241, 120);
+$accepted: rgb(55, 138, 0);
+$normal: rgb(0, 110, 255);
+$shadow: #888;
+$border-radius: 0.4rem;
+
+$btn-colors: (
+  "accepted": $accepted,
+  "error": $error,
+  "warning": $warning,
+  "normal": $normal,
+);
+
+$taglist: (
+  "success": lightgreen,
+  "warning": yellow,
+  "danger": red,
+  "info": lightblue,
+);

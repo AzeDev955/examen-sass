@@ -1,0 +1,117 @@
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+td:nth-child(1) {
+  background-color: #888888;
+}
+
+th:nth-child(1) {
+  background-color: #888888;
+}
+
+td:nth-child(2) {
+  background-color: #cccccc;
+}
+
+th:nth-child(2) {
+  background-color: #cccccc;
+}
+
+td:nth-child(3) {
+  background-color: #888888;
+}
+
+th:nth-child(3) {
+  background-color: #888888;
+}
+
+td:nth-child(4) {
+  background-color: #cccccc;
+}
+
+th:nth-child(4) {
+  background-color: #cccccc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  text-decoration: none;
+}
+.btn:hover {
+  box-shadow: 2px 5px #888;
+}
+.btn:active {
+  color: #fff;
+  background-color: orange;
+}
+
+.btn-accepted {
+  background-color: rgb(55, 138, 0);
+}
+
+.btn-error {
+  background-color: #ff0000;
+}
+
+.btn-warning {
+  background-color: rgb(239, 241, 120);
+}
+
+.btn-normal {
+  background-color: rgb(0, 110, 255);
+}
+
+.tag-success {
+  padding: 8px 12px;
+  margin: 5px 0;
+  list-style: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: fit-content;
+  background-color: lightgreen;
+}
+
+.tag-warning {
+  padding: 8px 12px;
+  margin: 5px 0;
+  list-style: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: fit-content;
+  background-color: yellow;
+}
+
+.tag-danger {
+  padding: 8px 12px;
+  margin: 5px 0;
+  list-style: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: fit-content;
+  background-color: red;
+}
+
+.tag-info {
+  padding: 8px 12px;
+  margin: 5px 0;
+  list-style: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: fit-content;
+  background-color: lightblue;
+}
+
+/*# sourceMappingURL=main.css.map */

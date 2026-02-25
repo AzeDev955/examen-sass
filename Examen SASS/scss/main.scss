@@ -1,0 +1,70 @@
+@use "./variables" as v;
+
+table {
+  border-collapse: collapse;
+  td,
+  th {
+    border: 1px solid black;
+    padding: 1rem;
+  }
+}
+@function column-color($columna) {
+  @if ($columna%2 == 0) {
+    @return #cccccc;
+  } @else {
+    @return #888888;
+  }
+}
+
+@for $i from 1 through 4 {
+  td:nth-child(#{$i}) {
+    background-color: column-color($i);
+  }
+  th:nth-child(#{$i}) {
+    background-color: column-color($i);
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: v.$border-radius;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    box-shadow: 2px 5px v.$shadow;
+  }
+  &:active {
+    color: #fff;
+    background-color: orange;
+  }
+}
+
+@each $nombre, $color in v.$btn-colors {
+  .btn-#{$nombre} {
+    background-color: $color;
+  }
+}
+
+@mixin tag-style($color) {
+  padding: 8px 12px;
+  margin: 5px 0;
+  list-style: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: fit-content;
+  background-color: $color;
+}
+
+//@for $i from 1 through 4 {
+//  .tag-list:nth-child(#{$i}) {
+//    @include tag-style($i);
+//  }
+//}
+
+@each $name, $color in v.$taglist {
+  .tag-#{$name} {
+    @include tag-style($color);
+  }
+}
